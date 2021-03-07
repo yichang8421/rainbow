@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+}
+
+.rainbow div{
+    /*组织父子margin合并，使用overflow:hidden;*/
+    overflow: hidden;
+}
+
+.rainbow{
+    height: 200px;
+    /*保证rainbow为一个半圆，溢出的部分隐藏*/
+    overflow: hidden;
+}
+
+.rainbow>div{
+    height: 400px;
+    width: 400px;
+    background:hsl(0,75%,50%);
+    border-radius: 50%;
+}
+
+.rainbow>div>div{
+    height: 380px;
+    margin: 10px;
+    background:hsl(60,75%,50%);
+    border-radius: 50%;
+}
+
+.rainbow>div>div>div{
+    height: 360px;
+    margin: 10px;
+    background:hsl(120,75%,50%);
+    border-radius: 50%;
+}
+
+.rainbow>div>div>div>div{
+    height: 340px;
+    margin: 10px;
+    background:hsl(180,75%,50%);
+    border-radius: 50%;
+}
+
+.rainbow>div>div>div>div>div{
+    height: 320px;
+    margin: 10px;
+    background:hsl(240,75%,50%);
+    border-radius: 50%;
+}
+
+.rainbow>div>div>div>div>div>div{
+    height: 300px;
+    margin: 10px;
+    background:hsl(300,75%,50%);
+    border-radius: 50%;
+}
+
+.rainbow>div>div>div>div>div>div>div{
+    height: 280px;
+    margin: 10px;
+    background:hsl(330,75%,50%);
+    border-radius: 50%;
+}
+
+.rainbow>div>div>div>div>div>div>div{
+    height: 260px;
+    margin: 10px;
+    background:hsl(330,0%,100%);
+    border-radius: 50%;
+}
